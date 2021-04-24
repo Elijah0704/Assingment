@@ -1,4 +1,4 @@
-#Assignment_3
+#Assignment-008/2 (Covid-19 Risk)
 #Yapmaya çalıştığım şey yaşı 75 üstü ve sigara içiyor mu diye bakmak, ikisinden biri varsa risk var.
 #Kronik hastalığı varsa risk var. Bağışıklığı yoksa risk var. Bunlar üzreinde bool cebri kullanımı ayarladım.
 #Bağışıklığı varsa her türlü riski yoktur.
