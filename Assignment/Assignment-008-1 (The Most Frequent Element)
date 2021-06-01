@@ -1,0 +1,33 @@
+# Task : Find out the most frequent number and its frequency.
+
+#Write a program that;
+
+#Finds out the most frequent number in the given list.
+#Calculates its frequency.
+#Prints out the result such as :
+
+#Note : You can/should use useful/necessary built-in functions and methods of the list operation.
+
+nums = [1, 3, 7, 4, 3, 0, 3, 6, 3]
+
+nums.sort()
+
+repeated0 = nums.count(0)
+
+repeated1 = nums.count(1)
+
+repeated3 = nums.count(3)
+
+repeated4 = nums.count(4)
+
+repeated6 = nums.count(6)
+
+repeated7 = nums.count(7)
+
+repeated_list = [repeated0, repeated1, repeated3, repeated4, repeated6, repeated7]
+
+repeated_list.sort(reverse=True)
+
+
+
+print("the most frequent number is",nums[5],"and",repeated_list[0], "times repeated")
