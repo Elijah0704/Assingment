@@ -1,0 +1,36 @@
+#Assignment-008/2 (Covid-19 Risk)
+#Task : Estimating the risk of death from coronavirus. Write a program that;
+#Takes "Yes" or "No" from the user as an answer to the following questions :
+#Are you a cigarette addict older than 75 years old? Variable → age
+#Do you have a severe chronic disease? Variable → chronic
+#Is your immune system too weak? Variable → immune
+#Set a logical algorithm using boolean logic operators (and/or) and use if-statements with the given variables in order to print out us a message : "You are in risky group"(if True ) or "You are not in risky group" (if False).
+#Yapmaya çalıştığım şey yaşı 75 üstü ve sigara içiyor mu diye bakmak, ikisinden biri varsa risk var.
+#Kronik hastalığı varsa risk var. Bağışıklığı yoksa risk var. Bunlar üzreinde bool cebri kullanımı ayarladım.
+#Bağışıklığı varsa her türlü riski yoktur.
+age = int(input("Yaşınızı giriniz;"))
+if age >=75 :
+    print(True) 
+else :
+    print(False)
+cigarette = int(input("Sigara kullanıyor musunuz?,Kullanıyorsanız 1 kullanmıyorsanız 0 yazınız "))
+if cigarette ==0 :
+    print(False) 
+else :
+    print(True)
+chronic = int(input("Kronik hastalığınız var mı? Varsa 1 yoksa 0 yazınız. "))
+if chronic ==0 :
+    print(False) 
+else :
+    print(True)
+immune = int(input("Bağışıklığınız var mı? Varsa ^^^^0^^^^ yoksa ^^^^1^^^ yazınız. "))
+if immune ==0 :
+    print(False) 
+else :
+        print(True)
+risk = int(((age and cigarette) or chronic) and immune)
+if risk ==0 :
+    print("Risk yoktur:(---", False , "---)") 
+else :
+    print("Risk vardır:(---", True ,"---)")
+© 2021 GitHub, Inc.
