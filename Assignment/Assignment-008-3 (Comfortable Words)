@@ -1,0 +1,39 @@
+#  Assignment 008/2 profit calculation
+#  Task - 1 :
+#  Find out if the given word is "comfortable words" in relation to the ten-finger keyboard use.
+#  A comfortable word is a word which you can type always alternating the hand you type with
+#  (assuming you type using a Q-keyboard and use of the ten-fingers standard).
+#  The word will always be a string consisting of only letters from a to z.
+#  Write a program which returns True if it's a comfortable word or False otherwise.
+
+right={'y', 'u', 'i', 'o', 'p', 'h', 'j','k', 'l', 'n', 'm'} #  sağ el harfleri
+
+left={'q', 'w', 'e', 'r', 't', 'a', 's', 'd', 'f', 'g', 'z', 'x', 'c', 'v', 'b'} #  sol el harfleri
+
+left_rigth={'y', 'u', 'i', 'o', 'p', 'h', 'j','k', 'l', 'n', 'm','q', 'w', 'e', 'r', 't', 'a', 's', 'd', 'f', 'g', 'z', 'x', 'c', 'v', 'b'}
+
+
+
+word1 = set("tester") #  tester ı harflerine ayırdım
+
+word2 = set("polly") #  polly i harflerine ayırdım
+
+word3 = set("clarusway") #clarusway i harflerine ayırdım
+
+
+
+#  print(word1 & word1.intersection(left)) tester ın harfleri ile left in harflerinin kesişimi 
+
+#  print(word2 & word2.intersection(right)) polly in harfleri ile right ın harflerinin kesişimi
+
+#  print(word3 & word3.intersection(right)) clarusway in harfleri ile right ın harflerinin kesişimi
+
+#  print(word3 & word3.intersection(left)) clarusway in harfleri ile left in harflerinin kesişimi
+
+
+
+print(word1 != word1 & word1.intersection(left)) #  word1 in tüm harfleri sadece left te varsa False yazdırsın
+
+print(word2 != word2 & word2.intersection(right)) # word2 nin tüm harfleri sadece right ta varsa False yazdırsın
+
+print(word3 == word3 & word3.intersection(left_rigth)) #  word3 ün tüm harfleri left_rigth ta varsa True yazdırsın
